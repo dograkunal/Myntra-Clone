@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 1rem for 10px size */
+  font-size: 62.5%;
+}
+
+.container {
+  /* 1140px*/
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.gridColMain {
+  grid-template-columns: 1fr 5fr;
+}
