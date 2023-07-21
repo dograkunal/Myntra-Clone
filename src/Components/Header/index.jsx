@@ -12,22 +12,22 @@ function HeaderSection() {
           <img src={Logo} alt="Myntra Logo" className="brandLogo" />
         </div>
         <nav className="headerNavBar">
-          <a href="#" className="navBarLink">
+          <a href="#" className="navBarLink padding-1">
             Men
           </a>
-          <a href="#" className="navBarLink">
+          <a href="#" className="navBarLink padding-1">
             Women
           </a>
-          <a href="#" className="navBarLink">
+          <a href="#" className="navBarLink padding-1">
             Kids
           </a>
-          <a href="#" className="navBarLink">
+          <a href="#" className="navBarLink padding-1">
             Home & Living
           </a>
-          <a href="#" className="navBarLink">
+          <a href="#" className="navBarLink padding-1">
             Beauty
           </a>
-          <a href="#" className="navBarLink">
+          <a href="#" className="navBarLink padding-1">
             Studio
           </a>
         </nav>
@@ -35,18 +35,22 @@ function HeaderSection() {
           <input type="text" placeholder="Search for Products" />
         </div>
         <div className="headerActions">
-          <div className="navBarLink Profile">
-            <span className="ProfileImg">
+          <div className="Profile">
+            <span>
               <AiOutlineUser size="20px" />
             </span>
-            <span className="ProfileText">Profile</span>
+            <span>
+              <a href="#" className="navBarLink padding-2">
+                Profile
+              </a>
+            </span>
           </div>
           <div className=" Profile">
             <span>
               <AiOutlineHeart size="20px" />
             </span>
             <span>
-              <a href="#" className="navBarLink">
+              <a href="#" className="navBarLink padding-2">
                 Wishlist
               </a>
             </span>
@@ -56,7 +60,7 @@ function HeaderSection() {
               <HiOutlineShoppingBag size="20px" />
             </span>
             <span>
-              <a href="#" className="navBarLink">
+              <a href="#" className="navBarLink padding-2">
                 Bag
               </a>
             </span>
