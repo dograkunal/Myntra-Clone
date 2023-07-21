@@ -13,8 +13,8 @@
       margin-left: 2%;
       width: 5%;
       img {
-        width: 53px;
-        height: 36px;
+        width: 5rem;
+        height: 3.5rem;
       }
     }
 
@@ -29,9 +29,8 @@
       float: right;
       justify-content: flex-end;
       input {
-        float: left;
         font-size: 14px;
-        line-height: 24px;
+        line-height: 2.4rem;
         color: #696e79;
         width: 35rem;
         margin-right: 1rem;
@@ -44,8 +43,6 @@
     }
     .headerActions {
       display: flex;
-      /* Temporary will change it accordingly */
-      justify-content: space-around;
       width: 15%;
     }
     .navBarLink {
@@ -55,6 +52,9 @@
       font-weight: 500;
       padding: 0 2rem 1rem;
       text-align: center;
+      // &:hover {
+      //   border-bottom: 2px solid red;
+      // }
     }
 
     .Profile {
@@ -79,15 +79,13 @@
 
     .filtersContainer {
       position: relative;
-      padding-top: 20px;
-      padding-bottom: 15px;
-      padding-left: 25px;
+      padding: 20px 5px 15px 25px;
       border-bottom: 1px solid #e9e9ed;
-      border-right: 1px solid #edebef;
+      border-right: 1px solid #e9e9ed;
       .filtersCategory {
         font-weight: 700;
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: 1.4rem;
         margin: 0 0 18px;
         clear: both;
         color: #282c3f;
@@ -102,7 +100,6 @@
         }
         .filterLabel {
           display: block;
-          // width: 95%;
           white-space: nowrap;
           cursor: pointer;
           overflow: hidden;
@@ -110,14 +107,12 @@
           color: #282c3f;
 
           input[type="checkbox"] {
-            // display: grid;
             width: 1.7rem;
             height: 1.7rem;
             margin-right: 16px;
             border: 1px solid #c3c2c9;
             background: #fff;
             border-radius: 2px;
-
             accent-color: #ff3f6c;
           }
         }
@@ -137,11 +132,9 @@
         list-style: none;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding-top: 24px;
-        padding-left: 15px;
-        padding-right: 20px;
+        padding: 25px 20px 0px 20px;
         align-content: stretch;
-        margin: 0 -10px 0 3px;
+        margin: 0 0 0 3px;
         width: 100%;
         .productCard {
           width: 210px;
@@ -153,13 +146,14 @@
           box-sizing: border-box;
           margin: 0 10px 30px;
           cursor: pointer;
+          margin-right: 3rem;
 
           &:hover {
-            box-shadow: 0 2px 16px 4px rgba(40, 44, 63, 0.07);
+            box-shadow: 0 2px 16px 4px rgba(40, 44, 63, 0.15);
           }
-          &:not(:last-child) {
-            margin-right: 30px;
-          }
+          // &:not(:last-child) {
+          //   margin-right: 30px;
+          // }
           .productImage {
             img {
               width: 21rem;
@@ -169,8 +163,8 @@
           .productTitle {
             position: relative;
             z-index: 2;
-            background: #fff;
-            padding: 0 10px;
+            background: #ffff;
+            padding: 0 1rem;
             margin-top: 1.2rem;
             box-sizing: border-box;
             overflow: hidden;
@@ -190,12 +184,11 @@
               font-size: 1.3rem;
               line-height: 1.5;
               margin-bottom: 1rem;
-              margin-top: 0;
+              // margin-top: 0;
               overflow: hidden;
               text-overflow: ellipsis;
               white-space: nowrap;
               font-weight: 400;
-              display: block;
             }
             .productHoverWraper {
               display: none;
@@ -210,7 +203,7 @@
                 text-transform: uppercase;
                 cursor: pointer;
                 padding: 6px 12px;
-                margin: 16px auto;
+                margin: 1.6rem auto;
                 .wishListWrap {
                   display: flex;
                   align-items: center;
@@ -260,26 +253,12 @@
             }
           }
 
-          // .productTitle {
-          //   &:hover {
-          //     display: none;
-          //   }
-          // }
-
-          // .productSize {
-          //   display: none;
-          //   width: 30px;
-          //   z-index: 5;
-          //   background-color: green;
-          // }
-
           .productTitle:hover {
             z-index: 99;
             position: absolute;
             bottom: 0px;
             height: 11.5rem;
             width: 100%;
-
             h3,
             h4 {
               display: none;
