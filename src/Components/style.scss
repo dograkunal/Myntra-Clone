@@ -272,6 +272,27 @@
               display: block;
             }
           }
+          .ratingContainer {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            left: 12px;
+            bottom: 91px;
+            border-radius: 2px;
+            padding: 3.5px;
+            background-color: hsla(0, 0%, 100%, 0.8);
+            span {
+              font-size: 1.2rem;
+              font-weight: 700;
+              margin: 0 3px;
+            }
+            .starCount {
+              font-size: 12px;
+              font-weight: 700;
+              border-left: 0.5px solid black;
+              padding: 0 4px;
+            }
+          }
         }
       }
     }

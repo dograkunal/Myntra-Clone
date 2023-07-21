@@ -1,7 +1,7 @@
 import "../general.scss";
 import "../style.scss";
 import Demo from "../../assets/demo.jpg";
-import { AiOutlineHeart } from "react-icons/ai";
+import { AiOutlineHeart, AiFillStar } from "react-icons/ai";
 
 function ProductsSection() {
   return (
@@ -9,6 +9,13 @@ function ProductsSection() {
       <li className="productCard">
         <div className="productImage">
           <img src={Demo} alt="Product Image" />
+        </div>
+        <div className="ratingContainer">
+          <span>4.2</span>
+          <span>
+            <AiFillStar color="green" />
+          </span>
+          <div className="starCount"> 29.8k</div>
         </div>
         <div className="productTitle">
           <div className="productHoverWraper">
