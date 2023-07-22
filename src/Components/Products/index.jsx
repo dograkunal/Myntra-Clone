@@ -1,9 +1,17 @@
-import "../general.scss";
-import "../style.scss";
+import React, { useState } from "react";
 import Demo from "../../assets/demo.jpg";
 import { AiOutlineHeart, AiFillStar } from "react-icons/ai";
+import "../general.scss";
+import "../style.scss";
 
 function ProductsSection() {
+  let [cartValue, setCartValue] = useState(0);
+
+  const handleAddClick = (e) => {
+    e.preventDefault();
+    setCartValue(() => cartValue++);
+  };
+
   return (
     <>
       <li className="productCard">
@@ -19,13 +27,40 @@ function ProductsSection() {
         </div>
         <div className="productTitle">
           <div className="productHoverWraper">
-            <span className="wishlist">
+            <span className="wishlist wishlistMargin">
               <div className="wishListWrap">
                 <span>
                   <AiOutlineHeart size="20px" />
                 </span>
                 <span className="wishlistText">Wishlist</span>
               </div>
+            </span>
+            <span>
+              {cartValue === 0 ? (
+                <span className="wishlist cartMargin" onClick={handleAddClick}>
+                  <div className="wishListWrap">
+                    <span className="wishlistText">Add to Cart</span>
+                  </div>
+                </span>
+              ) : (
+                <span className="addtoCart">
+                  <div
+                    onClick={() => {
+                      setCartValue(--cartValue);
+                    }}
+                  >
+                    <strong>-</strong>
+                  </div>
+                  <div>{cartValue}</div>
+                  <div
+                    onClick={() => {
+                      setCartValue(++cartValue);
+                    }}
+                  >
+                    <strong>+</strong>
+                  </div>
+                </span>
+              )}
             </span>
             <div className="sizes">
               <p>Sizes: L/XXL</p>

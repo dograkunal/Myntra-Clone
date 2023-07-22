@@ -207,8 +207,7 @@
                 align-items: center;
                 text-transform: uppercase;
                 cursor: pointer;
-                padding: 6px 12px;
-                margin: 1.6rem auto;
+
                 .wishListWrap {
                   display: flex;
                   align-items: center;
@@ -219,6 +218,18 @@
                     font-weight: 700;
                     font-size: 12px;
                   }
+                }
+                &:hover {
+                  background-color: #ff3f6cdc;
+                }
+              }
+              .addtoCart {
+                display: flex;
+                background-color: #eebad4d3;
+                justify-content: space-around;
+                font-size: 1.4rem;
+                div {
+                  font-size: 1.6rem;
                 }
               }
               .sizes {
@@ -262,7 +273,7 @@
             z-index: 99;
             position: absolute;
             bottom: 0px;
-            height: 11.5rem;
+            height: 14rem;
             width: 100%;
             h3,
             h4 {
