@@ -1,9 +1,9 @@
-import Landing from "./Components/landing";
+import MainRoute from "./Routes/route.main";
 
 function App() {
   return (
     <>
-      <Landing />
+      <MainRoute />
     </>
   );
 }

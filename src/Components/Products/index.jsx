@@ -41,7 +41,7 @@ function ProductsSection() {
                   <AddToCart el={el} />
                 </span>
                 <div className="sizes">
-                  <p>Sizes: L/XXL</p>
+                  <p>Sizes: L</p>
                 </div>
               </div>
               <div>
