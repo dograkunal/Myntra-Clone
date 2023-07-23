@@ -1,39 +1,16 @@
 import React, { useState } from "react";
 import Demo from "../../assets/demo.jpg";
 import { AiOutlineHeart, AiFillStar } from "react-icons/ai";
-import { useDispatch } from "react-redux";
-import {
-  addToCart,
-  removeFromCart,
-  EditProductInCart,
-} from "../Reducers/cartSlice";
 import { useSelector } from "react-redux";
+
 import "../general.scss";
 import "../style.scss";
+import AddToCart from "./addToCart";
 
 function ProductsSection() {
   const [data, setData] = useState({});
-  const dispatch = useDispatch();
   const ProductList = useSelector((state) => state.ProductCount?.cart);
   console.log(ProductList, "List");
-
-  const handleAddClick = (el) => {
-    // debugger;
-    let newData = {
-      ProductId: el.ProductId,
-      ProductCount: el.ProductCount + 1,
-    };
-    dispatch(EditProductInCart(newData));
-  };
-
-  const handleRemoveClick = (el) => {
-    // debugger;
-    let newData = {
-      ProductId: el.ProductId,
-      ProductCount: el.ProductCount - 1,
-    };
-    dispatch(EditProductInCart(newData));
-  };
 
   return (
     <>
@@ -61,36 +38,7 @@ function ProductsSection() {
                   </div>
                 </span>
                 <span>
-                  {el.ProductCount === 0 ? (
-                    <span
-                      className="wishlist cartMargin"
-                      onClick={() => {
-                        handleAddClick(el);
-                      }}
-                    >
-                      <div className="wishListWrap">
-                        <span className="wishlistText">Add to Cart</span>
-                      </div>
-                    </span>
-                  ) : (
-                    <span className="addtoCart">
-                      <div
-                        onClick={() => {
-                          handleRemoveClick(el);
-                        }}
-                      >
-                        <strong>-</strong>
-                      </div>
-                      <div>{el.ProductCount}</div>
-                      <div
-                        onClick={() => {
-                          handleAddClick(el);
-                        }}
-                      >
-                        <strong>+</strong>
-                      </div>
-                    </span>
-                  )}
+                  <AddToCart el={el} />
                 </span>
                 <div className="sizes">
                   <p>Sizes: L/XXL</p>
