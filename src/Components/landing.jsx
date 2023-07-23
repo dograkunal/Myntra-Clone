@@ -19,13 +19,6 @@ function landing() {
           <div className="productsContainer">
             <ul className="productsCardBase">
               <ProductsSection />
-              <ProductsSection />
-              <ProductsSection />
-              <ProductsSection />
-              <ProductsSection />
-              <ProductsSection />
-              <ProductsSection />
-              <ProductsSection />
             </ul>
           </div>
         </section>

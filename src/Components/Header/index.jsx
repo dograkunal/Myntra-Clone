@@ -3,6 +3,7 @@ import "../style.scss";
 import Logo from "../../assets/Myntra.png";
 import { AiOutlineUser, AiOutlineHeart } from "react-icons/ai";
 import { HiOutlineShoppingBag } from "react-icons/hi";
+import Cart from "./Cart";
 
 function HeaderSection() {
   return (
@@ -59,11 +60,7 @@ function HeaderSection() {
             <span>
               <HiOutlineShoppingBag size="20px" />
             </span>
-            <span>
-              <a href="#" className="navBarLink padding-2">
-                Bag
-              </a>
-            </span>
+            <Cart />
           </div>
         </div>
       </div>
