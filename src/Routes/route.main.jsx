@@ -1,5 +1,6 @@
 import React, { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
+import PrivateRoute from "../Utils/PrivateRoute";
 
 const Landing = React.lazy(() => import("../Components/landing"));
 const Cart = React.lazy(() => import("../Components/CartComponent/index"));
@@ -19,7 +20,9 @@ function MainRoute() {
         path="/cart"
         element={
           <Suspense>
-            <Cart />
+            <PrivateRoute>
+              <Cart />
+            </PrivateRoute>
           </Suspense>
         }
       />
