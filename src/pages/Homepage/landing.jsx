@@ -1,10 +1,9 @@
 import React from "react";
-import "./style.scss";
-import "./general.scss";
-import FiltersSection from "./Filters";
-import ProductsSection from "./Products";
-import HeaderSection from "./Header";
-
+import HeaderSection from '../../screens/Header';
+import FiltersSection from '../../screens/Filters';
+import ProductsSection from '../../screens/Products';
+import "../../styles/general.scss";
+import "../../styles/style.scss";
 function landing() {
   return (
     <>

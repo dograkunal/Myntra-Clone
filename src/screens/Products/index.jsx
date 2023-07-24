@@ -3,8 +3,8 @@ import Demo from "../../assets/demo.jpg";
 import { AiOutlineHeart, AiFillStar } from "react-icons/ai";
 import { useSelector } from "react-redux";
 
-import "../general.scss";
-import "../style.scss";
+import "../../styles/general.scss";
+import "../../styles/style.scss";
 import AddToCart from "./addToCart";
 
 function ProductsSection() {

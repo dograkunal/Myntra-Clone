@@ -1,5 +1,5 @@
-import "../style.scss";
-import "../general.scss";
+import "../../styles/general.scss";
+import "../../styles/style.scss";
 
 function FiltersSection() {
   return (

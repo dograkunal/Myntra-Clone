@@ -1,10 +1,12 @@
 import React from "react";
-import "./style.scss";
-import "../general.scss";
 import Logo from "../../assets/Myntra.png";
 import ShipLogo from "../../assets/ship-charge.jpg";
 import Demo from "../../assets/demo.jpg";
 import { PiKeyReturnThin } from "react-icons/pi";
+import "./style.scss";
+import "../../styles/general.scss";
+import "../../styles/style.scss";
+
 
 function CartComponent() {
   return (

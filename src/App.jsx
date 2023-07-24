@@ -2,9 +2,7 @@ import MainRoute from "./Routes/route.main";
 
 function App() {
   return (
-    <>
-      <MainRoute />
-    </>
+    <MainRoute />
   );
 }
 

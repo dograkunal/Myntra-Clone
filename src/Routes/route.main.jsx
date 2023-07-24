@@ -2,10 +2,10 @@ import React, { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import PrivateRoute from "../Utils/PrivateRoute";
 
-const Landing = React.lazy(() => import("../Components/landing"));
-const Cart = React.lazy(() => import("../Components/CartComponent/index"));
+const Landing = React.lazy(() => import("../pages/Homepage/landing"));
+const Cart = React.lazy(() => import("../pages/Cart"));
 const AuthComponent = React.lazy(() =>
-  import("../Components/Auth/AuthComponent")
+  import("../pages/Auth/AuthComponent")
 );
 
 function MainRoute() {
@@ -35,6 +35,12 @@ function MainRoute() {
           <Suspense>
             <AuthComponent />
           </Suspense>
+        }
+      />
+      <Route
+        path="*"
+        element={
+          <h1>Page not found</h1>
         }
       />
     </Routes>

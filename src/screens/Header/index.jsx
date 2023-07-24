@@ -1,10 +1,9 @@
-import "../general.scss";
-import "../style.scss";
+import '../../styles/general.scss';
+import '../../styles/style.scss';
 import Logo from "../../assets/Myntra.png";
 import { AiOutlineUser, AiOutlineHeart } from "react-icons/ai";
 import { HiOutlineShoppingBag } from "react-icons/hi";
-import Cart from "./Cart";
-
+import Cart from './Cart';
 function HeaderSection() {
   return (
     <>
