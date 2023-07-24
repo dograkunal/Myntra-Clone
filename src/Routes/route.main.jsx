@@ -4,6 +4,9 @@ import PrivateRoute from "../Utils/PrivateRoute";
 
 const Landing = React.lazy(() => import("../Components/landing"));
 const Cart = React.lazy(() => import("../Components/CartComponent/index"));
+const AuthComponent = React.lazy(() =>
+  import("../Components/Auth/AuthComponent")
+);
 
 function MainRoute() {
   return (
@@ -23,6 +26,14 @@ function MainRoute() {
             <PrivateRoute>
               <Cart />
             </PrivateRoute>
+          </Suspense>
+        }
+      />
+      <Route
+        path="/auth"
+        element={
+          <Suspense>
+            <AuthComponent />
           </Suspense>
         }
       />
