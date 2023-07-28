@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import "../../Styles/general.scss";
 
 function InputComponent({
   type,
@@ -7,9 +8,14 @@ function InputComponent({
   onChange,
   className,
   value,
+  label,
 }) {
   return (
     <>
+      <label className="labelForm">
+        {label}
+        {"🔥"}
+      </label>
       <input
         type={type}
         value={value}

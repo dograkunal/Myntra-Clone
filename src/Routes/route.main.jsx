@@ -4,9 +4,7 @@ import PrivateRoute from "../Utils/PrivateRoute";
 
 const Landing = React.lazy(() => import("../pages/Homepage/landing"));
 const Cart = React.lazy(() => import("../pages/Cart"));
-const AuthComponent = React.lazy(() =>
-  import("../pages/Auth/AuthComponent")
-);
+const AuthComponent = React.lazy(() => import("../pages/Auth/AuthComponent"));
 
 function MainRoute() {
   return (
@@ -37,12 +35,7 @@ function MainRoute() {
           </Suspense>
         }
       />
-      <Route
-        path="*"
-        element={
-          <h1>Page not found</h1>
-        }
-      />
+      <Route path="*" element={<h1>Page not found</h1>} />
     </Routes>
   );
 }

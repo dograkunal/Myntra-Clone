@@ -6,31 +6,61 @@
   height: 100vh;
   justify-content: center;
   text-align: center;
-  background-color: rgba(209, 126, 140, 0.452);
+  background-image: linear-gradient(
+    to right,
+    rgb(242, 112, 156),
+    rgb(255, 148, 114)
+  );
   .signupForm {
     position: absolute;
-    top: 50%;
+    top: 30%;
+    // right: 40%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     font-size: 1.4rem;
     padding: 2rem;
-    border: 1px solid rgb(255, 0, 0);
+    border: 1px solid rgba(66, 64, 66, 0.87);
     border-radius: 10px;
     background-color: #fff;
+    width: 20%;
 
     .inputField {
       padding: 10px;
       font-size: 1.4rem;
-      margin: 1px 10px 10px 10px;
+      margin: 1px 10px 5px 10px;
     }
   }
 }
 
+.formInput {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  justify-content: flex-start;
+}
+
 .submitBtn {
   padding: 10px;
-  width: 100%;
+  margin-bottom: 10px;
   border-radius: 10px;
   border: none;
-  background-color: green;
+  width: 100%;
+}
+
+.actionBtns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.loginBtn {
+  background-color: #339933;
+}
+
+.signUpBtn {
+  background-color: #3333ff;
+}
+
+.forgotBtn {
+  background-color: #ff1a1a;
 }

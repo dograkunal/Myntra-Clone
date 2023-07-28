@@ -7,7 +7,6 @@ import "./style.scss";
 import "../../styles/general.scss";
 import "../../styles/style.scss";
 
-
 function CartComponent() {
   return (
     <>

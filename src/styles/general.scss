@@ -62,3 +62,14 @@ strong {
 .fontWeight700 {
   font-weight: 700;
 }
+
+.labelForm {
+  display: flex;
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+.errorTag {
+  color: red;
+  margin: 5px;
+  align-self: flex-start;
+}
